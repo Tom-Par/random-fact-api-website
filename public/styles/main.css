@@ -1,5 +1,20 @@
 body {
-    text-align: center;
-    font-family:'Times New Roman', Times, serif;
-    font-size: 2em;
+  text-align: center;
+  font-family: "Atkinson Hyperlegible Mono", sans-serif;
+  font-size: 2em;
+  background-color: #41644a;
+}
+
+h1 {
+  color: #e9762b;
+  margin: 5%;
+}
+
+p {
+  color: #f1f0e9;
+}
+
+.fact-container {
+  width: 60%;
+  margin: auto;
 }
