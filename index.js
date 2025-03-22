@@ -17,6 +17,16 @@ app.get("/", async (req, res) => {
   }
 });
 
+app.get("/fact", async (req, res) => {
+  try {
+    const response = await axios.get("https://uselessfacts.jsph.pl/random.json");
+    res.json({ fact: response.data.text });
+  } catch (error) {
+    res.json({ fact: "Sorry, could not get the fact" });
+  }
+});
+
+
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });

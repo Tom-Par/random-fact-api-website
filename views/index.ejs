@@ -18,5 +18,22 @@
     <div class="fact-container">
       <p class="fact"><%= fact %></p>
     </div>
+    
+
+    <script>
+      document
+        .getElementById("new-fact")
+        .addEventListener("click", async function () {
+          try {
+            const response = await fetch("/fact");
+            const data = await response.json();
+            document.querySelector(".fact").textContent = data.fact;
+          } catch (err) {
+            document.querySelector(".fact").textContent =
+              "Sorry, could not get the fact";
+          }
+        });
+    </script>
+
   </body>
 </html>
