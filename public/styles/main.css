@@ -7,7 +7,7 @@ body {
 
 h1 {
   color: #e9762b;
-  margin: 5%;
+  margin-top: 5%;
 }
 
 p {
@@ -17,4 +17,15 @@ p {
 .fact-container {
   width: 60%;
   margin: auto;
+}
+
+#new-fact {
+  width:20%;
+  height: 50px;
+  font-size: 2rem;
+  color:#f1f0e9;
+  background-color: #e9762b;
+  border: solid 2px black;
+  border-radius: 50%;
+  margin-top: 0;
 }
