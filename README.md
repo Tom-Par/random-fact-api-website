@@ -18,9 +18,9 @@ Website that provides you with a random useless fact
    npm install
    ```
 
-4. **Start the server:**
+4. **Start the server using nodemon:**
    ```sh
-   npm start
+   nodemon index.js
    ```
 
 5. **Open your browser and visit:**
